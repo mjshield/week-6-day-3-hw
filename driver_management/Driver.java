@@ -13,4 +13,8 @@ public class Driver{
   public String getName(){
     return this.name;
   }
+
+  public int driveTime(int distance){
+    return this.quadBike.driveTime(distance);
+  }
 }
