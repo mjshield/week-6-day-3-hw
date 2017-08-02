@@ -1,3 +1,1 @@
-driver_management/*.class
-driver_management_specs/*.class
-behaviors/*.class
+bin/*.class
