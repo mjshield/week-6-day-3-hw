@@ -1,13 +1,14 @@
 package driver_management;
+import behaviors.*;
 
 public class Driver{
 
   String name;
-  QuadBike quadBike;
+  Driveable ride;
 
-  public Driver(String name, QuadBike quadBike) {
+  public Driver(String name, Driveable ride) {
     this.name = name;
-    this.quadBike = quadBike;
+    this.ride = ride;
   }
 
   public String getName(){
@@ -15,6 +16,11 @@ public class Driver{
   }
 
   public int driveTime(int distance){
-    return this.quadBike.driveTime(distance);
+    return this.ride.driveTime(distance);
   }
+
+  public void setRide(Driveable ride){
+    this.ride = ride;
+  }
+
 }
